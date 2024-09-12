@@ -65,17 +65,17 @@ if (mysqli_num_rows($query2) == 0) {
 </head>
 
 <body>
-    <div class="wrapper">
-        <div id="overlay" class="overlay">
-            <div class="overlay-content">
-                <button id="toggle-content" class="toggle-button">
-                    <p>Fawwaz</p>
-                    <p>Liyana</p>
-                    <p class="buka">Buka</p>
-                </button>
-            </div>
-        </div>
-    </div>
+<!--    <div class="wrapper">-->
+<!--        <div id="overlay" class="overlay">-->
+<!--            <div class="overlay-content">-->
+<!--                <button id="toggle-content" class="toggle-button">-->
+<!--                    <p>Fawwaz</p>-->
+<!--                    <p>Liyana</p>-->
+<!--                    <p class="buka">Buka</p>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="card">
         <div class="petal-container"></div>
         <!-- Intro Section -->
