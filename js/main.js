@@ -122,11 +122,15 @@ setupCountdown(".campaign-0", 1726247944740, 1728000000000);
  *  Add to Calendar
   ======================================================= */
 const event = {
-    title: "Jemputan Kenduri Kahwin Fawwaz & Aina",
-    startDate: "20240720T033000Z", // YYYYMMDDTHHmmssZ (UTC)
-    endDate: "20240720T090000Z",
-    location: "1595 Lorong Muhibbah 16, Kampung Tersusun Muhibbah Batu 33, Temoh Perak, Malaysia",
-    description: "Kami menjemput tuan/puan hadir ke majlis perkahwinan anakanda kami.",
+    title: "Wedding of Soad & Bushra",
+    startDate: "20241004T033000Z", // YYYYMMDDTHHmmssZ (UTC)
+    endDate: "20241004T090000Z",
+    location: "The Atrium Restaurant\n" +
+        "\n" +
+        "50 & 52 Pragati Avenue, J Block\n" +
+        "\n" +
+        "Baridhara, Dhaka",
+    description: "Wedding of Soad & Bushra",
 };
 
 // Function to generate Google Calendar URL
@@ -193,21 +197,21 @@ function addAppleCalendar() {
  *  Location for Google and Waze
   ======================================================= */
 function openGoogleMaps() {
-    const latitude = 4.226058186123785;  // Example latitude
-    const longitude = 101.22905188341969;  // Example longitude
+    const latitude = 23.802653671282986 // Example latitude
+    const longitude = 90.42299508237993;  // Example longitude
     const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}&travelmode=driving`;
 
     window.open(googleMapsUrl, "_blank");  // Open in a new tab
 }
 
-function openWaze() {
-    const latitude = 4.226058186123785;  // Example latitude
-    const longitude = 101.22905188341969;  // Example longitude
-    //const wazeUrl = `https://waze.com/ul?ll=${latitude},${longitude}&navigate=yes`;
-    const wazeUrl = `waze://?ll=${latitude},${longitude}&navigate=yes`
-
-    window.open(wazeUrl, "_blank");  // Open in a new tab
-}
+// function openWaze() {
+//     const latitude = 4.226058186123785;  // Example latitude
+//     const longitude = 101.22905188341969;  // Example longitude
+//     //const wazeUrl = `https://waze.com/ul?ll=${latitude},${longitude}&navigate=yes`;
+//     const wazeUrl = `waze://?ll=${latitude},${longitude}&navigate=yes`
+//
+//     window.open(wazeUrl, "_blank");  // Open in a new tab
+// }
 
 
 
