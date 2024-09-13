@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 });
 
-setupCountdown(".campaign-0", 1704038400000, 1721448000000);
+setupCountdown(".campaign-0", 1726247944740, 1728000000000);
 
 
 
