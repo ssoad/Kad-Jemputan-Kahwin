@@ -20,9 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
         card.style.display = "block";   // Show the card
     }, { once: true });
 
-    // Play the audio
-    const audioPlayer = document.getElementById("audio-player");
-    audioPlayer.play();  // Start playing the audio
+    // Play the audio on scroll
+    document.body.addEventListener("mousemove", function () {
+        // Play the audio
+        const audioPlayer = document.getElementById("audio-player");
+        audioPlayer.play();  // Start playing the audio
+    });
+
 });
 
 
@@ -31,9 +35,13 @@ document.getElementById("toggle-content").addEventListener("click", function () 
     const overlay = document.getElementById("overlay");
     overlay.style.display = "none";
 
-   // Play the audio
+  
+   document.body.addEventListener("mousemove", function () {
+     // Play the audio
    const audioPlayer = document.getElementById("audio-player");
    audioPlayer.play();  // Start playing the audio
+
+})
 });
 
 document.getElementById("toggle-content").addEventListener("click", function () {
