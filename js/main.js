@@ -1,47 +1,14 @@
 /*============================================================================================
     # Wrapper Overlay
 ============================================================================================*/
-// on page load
-document.addEventListener("DOMContentLoaded", function () {
-    // Hide the overlay
-    const overlay = document.getElementById("overlay");
-    overlay.style.display = "none";
-
-    var wrapper = document.querySelector(".wrapper"); // Change to wrapper
-    var card = document.querySelector(".card");
-
-    // Add the 'hidden' class to start the fade out transition
-    wrapper.classList.add("hidden");
-
-    // Wait for the transition to complete
-    wrapper.addEventListener("transitionend", function () {
-        // After fade out is complete, hide the wrapper and show the card
-        wrapper.style.display = "none"; // Hide the wrapper
-        card.style.display = "block";   // Show the card
-    }, { once: true });
-
-    // Play the audio on scroll
-    document.body.addEventListener("mousemove", function () {
-        // Play the audio
-        const audioPlayer = document.getElementById("audio-player");
-        audioPlayer.play();  // Start playing the audio
-    });
-
-});
-
-
 document.getElementById("toggle-content").addEventListener("click", function () {
     // Hide the overlay
     const overlay = document.getElementById("overlay");
     overlay.style.display = "none";
 
-  
-   document.body.addEventListener("mousemove", function () {
-     // Play the audio
+   // Play the audio
    const audioPlayer = document.getElementById("audio-player");
    audioPlayer.play();  // Start playing the audio
-
-})
 });
 
 document.getElementById("toggle-content").addEventListener("click", function () {
